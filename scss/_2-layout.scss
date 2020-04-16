@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  min-width: 1200px;
+  max-width: 1400px;
+}
+
+@import "./modules/header";
