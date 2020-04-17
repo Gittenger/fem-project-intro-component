@@ -2,11 +2,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .container {
-  min-width: 1200px;
-  max-width: 1400px;
+  position: relative;
+  z-index: 1;
+  min-width: $container-min-width;
+  max-width: $container-max-width;
 }
 
 main {
@@ -19,3 +22,4 @@ main {
 @import "./modules/header";
 @import "./modules/info-box";
 @import "./modules/illustration";
+@import "./modules/background-box";

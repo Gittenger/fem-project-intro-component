@@ -1,7 +1,18 @@
 .illustration {
-  width: 500px;
+  min-width: $container-min-width/2;
+  max-width: $container-max-width/2;
 
-  img {
-    max-width: 100%;
+  &-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+
+    img {
+      position: relative;
+      max-width: 100%;
+      left: 10rem;
+      bottom: 5rem;
+    }
   }
 }

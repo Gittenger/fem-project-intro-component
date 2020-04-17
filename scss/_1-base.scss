@@ -1,10 +1,13 @@
 $color-font-nav: #12172a;
 $color-font-heading: #232943;
-$color-font-subheading: #65636e;
-$color-font-subheading-lighter: #5e6166;
-$color-heading-lead: #232a47;
+$color-font-subheading: #65626e;
+$color-font-subheading-lighter: #a8a8a8;
 $color-primary: #ff5d5e;
+$color-primary-active: #ff8584;
 $color-secondary: #edf2f6;
+
+$container-max-width: 1200px;
+$container-min-width: 900px;
 
 * {
   box-sizing: inherit;
