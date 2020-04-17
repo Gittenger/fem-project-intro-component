@@ -4,6 +4,10 @@ header {
   align-items: center;
   padding-top: 2.5rem;
 
+  & * {
+    color: $color-font-nav;
+  }
+
   nav {
     width: 30%;
     display: flex;
@@ -15,5 +19,26 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    list-style: none;
+
+    & > li {
+      display: flex;
+      align-items: center;
+    }
+
+    & > li > a {
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    span {
+      position: relative;
+      top: -3px;
+      display: flex;
+      align-items: center;
+      user-select: none;
+      font-size: 2rem;
+      color: #d0d5d9;
+    }
   }
 }

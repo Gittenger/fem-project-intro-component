@@ -296,6 +296,39 @@ td {
   vertical-align: top;
 }
 
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+* {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+.subheading {
+  font-family: "Barlow", sans-serif;
+}
+
+header *,
+.heading,
+.lead,
+.cta > button {
+  font-weight: 700;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -307,11 +340,21 @@ body {
   max-width: 1400px;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 11rem;
+  padding-top: 3rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 2.5rem;
+}
+header * {
+  color: #12172a;
 }
 header nav {
   width: 30%;
@@ -323,6 +366,57 @@ header ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  list-style: none;
+}
+header ul > li {
+  display: flex;
+  align-items: center;
+}
+header ul > li > a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header ul span {
+  position: relative;
+  top: -3px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  font-size: 2rem;
+  color: #d0d5d9;
+}
+
+.info-box .leading-text {
+  text-transform: uppercase;
+  margin-bottom: 1.7rem;
+}
+.info-box .leading-text .lead {
+  display: inline-block;
+  text-align: center;
+  background-color: #232943;
+  color: #fff;
+  width: 5.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 15px;
+}
+.info-box .leading-text p {
+  color: #5e6166;
+  display: inline;
+  letter-spacing: 3px;
+  margin-left: 1.7rem;
+}
+.info-box .heading {
+  color: #232943;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  max-width: 46rem;
+}
+
+.illustration {
+  width: 500px;
+}
+.illustration img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

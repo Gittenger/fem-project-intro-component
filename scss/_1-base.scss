@@ -1,0 +1,22 @@
+$color-font-nav: #12172a;
+$color-font-heading: #232943;
+$color-font-subheading: #65636e;
+$color-font-subheading-lighter: #5e6166;
+$color-heading-lead: #232a47;
+$color-primary: #ff5d5e;
+$color-secondary: #edf2f6;
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+@import "./modules/typography";

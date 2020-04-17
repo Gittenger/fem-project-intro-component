@@ -9,4 +9,13 @@ body {
   max-width: 1400px;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 11rem;
+  padding-top: 3rem;
+}
+
 @import "./modules/header";
+@import "./modules/info-box";
+@import "./modules/illustration";

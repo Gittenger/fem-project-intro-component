@@ -1,0 +1,30 @@
+.info-box {
+  .leading-text {
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+
+    .lead {
+      display: inline-block;
+      text-align: center;
+      background-color: $color-font-heading;
+      color: #fff;
+      width: 5.5rem;
+      padding: 0.3rem 0.5rem;
+      border-radius: 15px;
+    }
+
+    p {
+      color: $color-font-subheading-lighter;
+      display: inline;
+      letter-spacing: 3px;
+      margin-left: 1.7rem;
+    }
+  }
+
+  .heading {
+    color: $color-font-heading;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    max-width: 46rem;
+  }
+}
