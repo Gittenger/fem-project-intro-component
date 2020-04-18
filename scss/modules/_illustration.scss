@@ -1,18 +1,40 @@
 .illustration {
-  min-width: $container-min-width/2;
-  max-width: $container-max-width/2;
+  min-width: var(--container-min-width) / 2;
+  max-width: var(--container-max-width) / 2;
 
   &-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150%;
+    width: 180%;
 
     img {
       position: relative;
       max-width: 100%;
-      left: 10rem;
+      left: 3rem;
       bottom: 5rem;
+    }
+
+    @include mq("large") {
+      width: 150%;
+      img {
+        left: 10rem;
+      }
+    }
+
+    @include mq("desk") {
+      width: 140%;
+      img {
+        left: 3rem;
+      }
+    }
+
+    @include mq("tabland") {
+      width: 130%;
+      img {
+        left: 5rem;
+        bottom: 0;
+      }
     }
   }
 }

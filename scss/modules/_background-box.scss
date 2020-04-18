@@ -1,10 +1,36 @@
 .background-box {
   position: absolute;
   top: -30%;
-  right: -18%;
+  right: -15%;
   width: 1000px;
   height: 650px;
   background-color: $color-secondary;
   border-radius: 6rem;
   z-index: 0;
+
+  @include mq("large") {
+    right: -28%;
+  }
+
+  @include mq("desk") {
+    right: -32%;
+  }
+
+  @include mq("tabland") {
+    right: -40%;
+  }
+
+  @include mq("tabport") {
+    right: -57%;
+  }
+
+  @include mq("phonelg") {
+    right: -69%;
+  }
+
+  @include mq("phonesm") {
+    height: 700px;
+    width: 400px;
+    right: -40%;
+  }
 }

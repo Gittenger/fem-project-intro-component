@@ -3,13 +3,21 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+
+  @include mq("phonesm") {
+    overflow-y: scroll;
+  }
 }
 
 .container {
   position: relative;
   z-index: 1;
-  min-width: $container-min-width;
-  max-width: $container-max-width;
+  min-width: var(--container-min-width);
+  max-width: var(--container-max-width);
+
+  @include mq("tabland") {
+    padding: 2rem;
+  }
 }
 
 main {
@@ -17,6 +25,40 @@ main {
   grid-template-columns: 1fr 1fr;
   margin-top: 11rem;
   padding-top: 3rem;
+
+  @include mq("phonesm") {
+    margin-top: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    .illustration {
+      grid-row: 1 / 2;
+    }
+
+    .info-box {
+      grid-row: 2 / 3;
+    }
+  }
+}
+
+footer {
+  a:link,
+  a:visited {
+    color: blue;
+  }
+}
+
+footer {
+  @include mq("tabport") {
+    margin-top: 4rem;
+  }
+
+  @include mq("phonesm") {
+    font-size: 1rem;
+  }
 }
 
 @import "./modules/header";
