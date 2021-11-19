@@ -20,7 +20,7 @@
       margin-left: 1.7rem;
     }
 
-    @include mq("phonesm") {
+    @include mq('phonesm') {
       font-size: 1.3rem;
     }
   }
@@ -33,11 +33,11 @@
     margin-bottom: 3rem;
     line-height: 1;
 
-    @include mq("tabland") {
+    @include mq('tabland') {
       font-size: 5rem;
     }
 
-    @include mq("phonelg") {
+    @include mq('phonelg') {
       font-size: 4rem;
     }
   }
@@ -50,6 +50,9 @@
   }
 
   .cta {
+    display: flex;
+    align-items: center;
+
     button {
       background-color: $color-primary;
       color: #fff;
@@ -58,8 +61,10 @@
       border-radius: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 1px;
+      white-space: nowrap;
+      transition: transform 0.2s;
 
-      @include mq("phonesm") {
+      @include mq('phonesm') {
         font-size: 1.1rem;
         padding: 0.8rem 2rem;
       }
@@ -82,10 +87,11 @@
       color: $color-font-subheading-lighter;
       display: inline;
       text-transform: uppercase;
+      white-space: nowrap;
       margin-left: 2rem;
       letter-spacing: 4px;
 
-      @include mq("phonesm") {
+      @include mq('phonesm') {
         font-size: 1.2rem;
       }
     }

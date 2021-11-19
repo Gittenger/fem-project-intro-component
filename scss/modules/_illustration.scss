@@ -1,40 +1,30 @@
 .illustration {
-  min-width: var(--container-min-width) / 2;
-  max-width: var(--container-max-width) / 2;
+  grid-column: 2 / 3;
+  display: grid;
+  place-content: center;
 
   &-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 180%;
+    width: 140%;
+    transform: translate(10rem, -5rem);
 
     img {
-      position: relative;
-      max-width: 100%;
-      left: 3rem;
-      bottom: 5rem;
+      width: 100%;
     }
 
-    @include mq("large") {
-      width: 150%;
-      img {
-        left: 10rem;
-      }
+    @include mq('large') {
+      transform: translate(20rem, -5rem);
     }
 
-    @include mq("desk") {
-      width: 140%;
-      img {
-        left: 3rem;
-      }
+    @include mq('desk') {
+      transform: translate(10rem, 0);
     }
 
-    @include mq("tabland") {
-      width: 130%;
-      img {
-        left: 5rem;
-        bottom: 0;
-      }
+    @include mq('tabland') {
+      width: 120%;
+      transform: translate(10rem, 0);
     }
   }
 }

@@ -4,33 +4,6 @@
 
 html {
   font-size: 62.5%;
-  --container-max-width: 1100px;
-  --container-min-width: 1000px;
-
-  @include mq("desk") {
-    --container-max-width: 1000px;
-    --container-min-width: 900px;
-  }
-
-  @include mq("tabland") {
-    --container-max-width: 900px;
-    --container-min-width: 800px;
-  }
-
-  @include mq("tabport") {
-    --container-max-width: 800px;
-    --container-min-width: 700px;
-  }
-
-  @include mq("phonelg") {
-    --container-max-width: 650px;
-    --container-min-width: 550px;
-  }
-
-  @include mq("phonesm") {
-    --container-max-width: 550px;
-    --container-min-width: 350px;
-  }
 }
 
 body {

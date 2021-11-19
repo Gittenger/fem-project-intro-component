@@ -2,9 +2,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
+  overflow-x: hidden;
 
-  @include mq("phonesm") {
+  @include mq('phonesm') {
     overflow-y: scroll;
   }
 }
@@ -12,11 +13,14 @@ body {
 .container {
   position: relative;
   z-index: 1;
-  min-width: var(--container-min-width);
-  max-width: var(--container-max-width);
+  padding: 10rem;
 
-  @include mq("tabland") {
-    padding: 2rem;
+  @include mq('desk') {
+    padding: 8rem;
+  }
+
+  @include mq('tabland') {
+    padding: 6rem;
   }
 }
 
@@ -26,7 +30,7 @@ main {
   margin-top: 11rem;
   padding-top: 3rem;
 
-  @include mq("phonesm") {
+  @include mq('phonesm') {
     margin-top: 0;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
@@ -52,16 +56,16 @@ footer {
 }
 
 footer {
-  @include mq("tabport") {
+  @include mq('tabport') {
     margin-top: 4rem;
   }
 
-  @include mq("phonesm") {
+  @include mq('phonesm') {
     font-size: 1rem;
   }
 }
 
-@import "./modules/header";
-@import "./modules/info-box";
-@import "./modules/illustration";
-@import "./modules/background-box";
+@import './modules/header';
+@import './modules/info-box';
+@import './modules/illustration';
+@import './modules/background-box';
